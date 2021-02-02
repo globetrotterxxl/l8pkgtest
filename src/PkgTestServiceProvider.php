@@ -14,16 +14,16 @@ class PkgTestServiceProvider extends ServiceProvider
 
             // publish config
             $this->publishes([
-                __DIR__ . '/../../config/config.php' => config_path('pkgtest.php'),
+                __DIR__ . '/../config/pkgtest.php' => config_path('pkgtest.php'),
             ],'config');
 
             $this->publishes([
-                __DIR__ . '/../../resources/views' => base_path('resources/views/vendor/pkgtest'),
+                __DIR__ . '/../resources/views' => base_path('resources/views/vendor/pkgtest'),
             ], 'views');
 
         }
 
-        $this->loadViewsFrom( __DIR__ . '/../../resources/views', 'pkgtest');
+        $this->loadViewsFrom( __DIR__ . '/../resources/views', 'pkgtest');
 
     }
 
