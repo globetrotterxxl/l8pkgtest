@@ -2,7 +2,7 @@
 
 namespace globetrotterxxl\PkgTest;
 
-use Illminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
 class PkgTestServiceProvider extends ServiceProvider
 {
