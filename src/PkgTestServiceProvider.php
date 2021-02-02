@@ -18,7 +18,7 @@ class PkgTestServiceProvider extends ServiceProvider
             ],'config');
 
             $this->publishes([
-                __DIR__ . '/../../resources/views' => base_path('resources/views/vendor/pkgtest');
+                __DIR__ . '/../../resources/views' => base_path('resources/views/vendor/pkgtest'),
             ], 'views');
 
         }
