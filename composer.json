@@ -1,0 +1,42 @@
+{
+    "name": "globetrotterxxl/l8pkgtest",
+    "description": "laravel8 package test",
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "globetrotterxxl",
+            "email": "globetrotterxxl@gmx.net",
+            "homepage": "https://www.example.com"
+        }
+    ],
+    "homepage": "https://github.com/globetrotterxxl/l8pkgtest",
+    "keywords": ["Laravel", "l8pkgtest"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "globetrotterxxl\\PkgTest\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "globetrotterxxl\\PkgTest\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "globetrotterxxl\\PkgTest\\PkgTestServiceProvider"
+            ],
+            "aliases": {
+                "PkgTest": "globetrotterxxl\\PkgTest\\Facades\\PkgTest"
+            }
+        }
+    }
+}
+
